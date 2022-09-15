@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="6minEats" />
     <meta name="keywords" content="6minEats, 6 minEats, delivery app" />
-    <meta name="author" content="Carolina Girafa" />
+    <meta name="author" content="Gabriel Telles" />
 
     <title>6 MinEats</title>
     <link rel="stylesheet" href="reset.css" />
@@ -28,7 +28,7 @@
     ></button> <!-- botao estranho -->
     <div class="confirmacao esconder">
       <h2>
-        Confirme seu pedido
+        Review
       </h2>
       <div><span class="prato"></span><span class="precoprato"></span></div>
       <div><span class="bebida"></span><span class="precobebida"></span></div>
@@ -44,10 +44,10 @@
         enabled
         onclick="enviarpedido()"
       >
-        <p>Tudo certo, pode pedir!</p>
+        <p>All right!</p>
       </button>
       <button class="cancelar" type="button" enabled onclick="cancelar()">
-        <p>Cancelar</p>
+        <p>Cancel</p>
       </button>
     </div>
     <header>
@@ -58,143 +58,143 @@
     </header>
     <main>
       <h1>
-        Primeiro, seu prato
+        First, choose one
       </h1>
       <section class="itensprato">
         <div class="itens" onclick="pratoselecionado(this)">
           <img src="assets/comida.jpg" alt="imagem de comida" />
-          <h2>Frango Yin Yang</h2>
-          <p>Um pouco de batata, um pouco de salada</p>
+          <h2>Chicken Yin Yang</h2>
+          <p>Potatoes, salad and chicken</p>
           <p>€ <span>14.99</span></p>
           <ion-icon class="iconselecao" name="checkmark-circle"></ion-icon>
         </div>
         <div class="itens" onclick="pratoselecionado(this)">
           <img src="assets/comida.jpg" alt="imagem de comida" />
-          <h2>Frango Yin+ Yang-</h2>
-          <p>Mais batata, menos salada</p>
+          <h2>Chicken Yin Yang</h2>
+          <p>Potatoes, salad and chicken</p>
           <p>€ <span>13.99</span></p>
           <ion-icon class="iconselecao" name="checkmark-circle"></ion-icon>
         </div>
         <div class="itens" onclick="pratoselecionado(this)">
           <img src="assets/comida.jpg" alt="imagem de comida" />
-          <h2>Frango Yin Yin</h2>
-          <p>Um pouco de batata e mais batata</p>
+          <h2>Chicken Yin Yang</h2>
+          <p>Potatoes, salad and chicken</p>
           <p>€ <span>14.99</span></p>
           <ion-icon class="iconselecao" name="checkmark-circle"></ion-icon>
         </div>
         <div class="itens" onclick="pratoselecionado(this)">
           <img src="assets/comida.jpg" alt="imagem de comida" />
-          <h2>Frango Yang e Yang</h2>
-          <p>Um pouco de salada e mais salada</p>
+          <h2>Chicken Yin Yang</h2>
+          <p>Potatoes, salad and chicken</p>
           <p>€ <span>12.99</span></p>
           <ion-icon class="iconselecao" name="checkmark-circle"></ion-icon>
         </div>
         <div class="itens" onclick="pratoselecionado(this)">
           <img src="assets/comida.jpg" alt="imagem de comida" />
-          <h2>Frango Yin- Yang+</h2>
-          <p>Menos batata, mais salada</p>
+          <h2>Chicken Yin Yang</h2>
+          <p>Potatoes, salad and chicken</p>
           <p>€ <span>13.99</span></p>
           <ion-icon class="iconselecao" name="checkmark-circle"></ion-icon>
         </div>
         <div class="itens" onclick="pratoselecionado(this)">
           <img src="assets/comida.jpg" alt="imagem de comida" />
-          <h2>Frango -(Yin Yang)</h2>
-          <p>Nada de batata, nada de salada</p>
+          <h2>Chicken Yin Yang</h2>
+          <p>Potatoes, salad and chicken</p>
           <p>€ <span>11.99</span></p>
           <ion-icon class="iconselecao" name="checkmark-circle"></ion-icon>
         </div>
       </section>
       <h1>
-        Agora, sua bebida
+        Choose a drink
       </h1>
       <section class="itensbebida">
         <div class="itens" onclick="bebidaselecionada(this)">
           <img src="assets/coca.jpg" alt="imagem de comida" />
-          <h2>Coquinha gelada</h2>
-          <p>Garrafa 1L</p>
+          <h2>Coke</h2>
+          <p>1L</p>
           <p>€ <span>3.99</span></p>
           <ion-icon class="iconselecao" name="checkmark-circle"></ion-icon>
         </div>
         <div class="itens" onclick="bebidaselecionada(this)">
           <img src="assets/coca.jpg" alt="imagem de comida" />
-          <h2>Coquinha gelada</h2>
-          <p>Garrafa 600ml</p>
+          <h2>Coke</h2>
+          <p>600 mL</p>
           <p>€ <span>3.99</span></p>
           <ion-icon class="iconselecao" name="checkmark-circle"></ion-icon>
         </div>
 
         <div class="itens" onclick="bebidaselecionada(this)">
           <img src="assets/coca.jpg" alt="imagem de comida" />
-          <h2>Coquinha gelada</h2>
-          <p>Garrafa 290ml</p>
+          <h2>Coke</h2>
+          <p>290 mL</p>
           <p>€ <span>3.99</span></p>
           <ion-icon class="iconselecao" name="checkmark-circle"></ion-icon>
         </div>
         <div class="itens" onclick="bebidaselecionada(this)">
           <img src="assets/coca.jpg" alt="imagem de comida" />
-          <h2>Coquinha gelada</h2>
-          <p>Lata 350ml</p>
+          <h2>Coke</h2>
+          <p>1L</p>
           <p>€ <span>3.99</span></p>
           <ion-icon class="iconselecao" name="checkmark-circle"></ion-icon>
         </div>
         <div class="itens" onclick="bebidaselecionada(this)">
           <img src="assets/coca.jpg" alt="imagem de comida" />
-          <h2>Coquinha gelada</h2>
-          <p>Lata 310ml</p>
+          <h2>Coke</h2>
+          <p>1L</p>
           <p>€ <span>3.99</span></p>
           <ion-icon class="iconselecao" name="checkmark-circle"></ion-icon>
         </div>
         <div class="itens" onclick="bebidaselecionada(this)">
           <img src="assets/coca.jpg" alt="imagem de comida" />
-          <h2>Coquinha gelada</h2>
-          <p>Lata 250ml</p>
+          <h2>Coke</h2>
+          <p>1L</p>
           <p>€ <span>3.99</span></p>
           <ion-icon class="iconselecao" name="checkmark-circle"></ion-icon>
         </div>
       </section>
       <h1>
-        Por fim, sua sobremesa
+        Choose a dessert
       </h1>
       <section class="itenssobremesa">
         <div class="itens" onclick="sobremesaselecionada(this)">
           <img src="assets/pudim.jpg" alt="imagem de comida" />
           <h2>Pudim</h2>
-          <p>Só pudim</p>
+          <p>Pudim</p>
           <p>€ <span>4.59</span></p>
           <ion-icon class="iconselecao" name="checkmark-circle"></ion-icon>
         </div>
         <div class="itens" onclick="sobremesaselecionada(this)">
           <img src="assets/pudim.jpg" alt="imagem de comida" />
           <h2>Pudim</h2>
-          <p>Somente pudim</p>
+          <p>Pudim</p>
           <p>€ <span>4.59</span></p>
           <ion-icon class="iconselecao" name="checkmark-circle"></ion-icon>
         </div>
         <div class="itens" onclick="sobremesaselecionada(this)">
           <img src="assets/pudim.jpg" alt="imagem de comida" />
           <h2>Pudim</h2>
-          <p>Unicamente pudim</p>
+          <p>Pudim</p>
           <p>€ <span>4.59</span></p>
           <ion-icon class="iconselecao" name="checkmark-circle"></ion-icon>
         </div>
         <div class="itens" onclick="sobremesaselecionada(this)">
           <img src="assets/pudim.jpg" alt="imagem de comida" />
           <h2>Pudim</h2>
-          <p>Exclusivamente pudim</p>
+          <p>Pudim</p>
           <p>€ <span>4.59</span></p>
           <ion-icon class="iconselecao" name="checkmark-circle"></ion-icon>
         </div>
         <div class="itens" onclick="sobremesaselecionada(this)">
           <img src="assets/pudim.jpg" alt="imagem de comida" />
           <h2>Pudim</h2>
-          <p>Meramente pudim</p>
+          <p>Pudim</p>
           <p>€ <span>4.59</span></p>
           <ion-icon class="iconselecao" name="checkmark-circle"></ion-icon>
         </div>
         <div class="itens" onclick="sobremesaselecionada(this)">
           <img src="assets/pudim.jpg" alt="imagem de comida" />
           <h2>Pudim</h2>
-          <p>Apenas pudim</p>
+          <p>Pudim</p>
           <p>€ <span>4.59</span></p>
           <ion-icon class="iconselecao" name="checkmark-circle"></ion-icon>
         </div>

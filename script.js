@@ -38,7 +38,7 @@ function pratoselecionado(item) {
     item.classList.add("selecao");
     if (document.querySelector(".fecharpedido").disabled) {
       document.querySelector(".fecharpedido").disabled = false;
-      document.querySelector(".fecharpedido").innerHTML = "Fechar pedido";
+      document.querySelector(".fecharpedido").innerHTML = "Submit order";
     }
   }
 
@@ -65,7 +65,7 @@ function bebidaselecionada(item) {
     item.classList.add("selecao");
     if (document.querySelector(".fecharpedido").disabled) {
       document.querySelector(".fecharpedido").disabled = false;
-      document.querySelector(".fecharpedido").innerHTML = "Fechar pedido";
+      document.querySelector(".fecharpedido").innerHTML = "Submit order";
     }
   }
 
@@ -92,7 +92,7 @@ function sobremesaselecionada(item) {
     item.classList.add("selecao");
     if (document.querySelector(".fecharpedido").disabled) {
       document.querySelector(".fecharpedido").disabled = false;
-      document.querySelector(".fecharpedido").innerHTML = "Fechar pedido";
+      document.querySelector(".fecharpedido").innerHTML = "Submit order";
     }
   }
 
@@ -135,25 +135,25 @@ function cancelar() {
 }
 
 function enviarpedido() {
-  const nome = prompt("Digite seu nome:");
-  const endereco = prompt("Digite o endereço de entega:");
+  const nome = prompt("What's your nome:");
+  const endereco = prompt("Your Adress:");
 
   let msg =
-    "Olá, gostaria de fazer o pedido:\n" +
-    "- Prato: " +
+    "Hello, I would like to eat:\n" +
+    "- Main Course: " +
     comida +
-    "\n- Bebida: " +
+    "\n- Drink: " +
     bebida +
-    "\n- Sobremesa: " +
+    "\n- Dessert: " +
     sobremesa +
     "\nTotal: R$ " +
     precofinal.toFixed(2).replace(".", ",") +
-    "\n\nNome: " +
+    "\n\nName: " +
     nome +
-    "\nEndereço: " +
+    "\nAddress: " +
     endereco;
 
   const msgenc = encodeURIComponent(msg);
-  // deixamos o # no lugar do link do wpp - no escopo do projeto tem um link para ver isso
+  // deixamos o # no lugar do link do wpp 
   window.open("#" + msgenc, "_blank");
 }
